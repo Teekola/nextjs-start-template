@@ -7,4 +7,4 @@
 -  Framer Motion
 -  Prisma
 -  Cypress
--  Context provider for all pages (TODO)
+-  Context provider template
