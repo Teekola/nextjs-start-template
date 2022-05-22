@@ -7,4 +7,4 @@
 -  Framer Motion
 -  Prisma
 -  Cypress
--  Context provider template
+-  Context template
