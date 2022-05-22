@@ -4,7 +4,7 @@
 -  TypeScript
 -  Eslint + Prettier
 -  Styled Components
--  Framer Motion (TODO)
+-  Framer Motion
 -  Prisma
--  React Testing Library + Jest + Cypress (TODO)
+-  Cypress
 -  Context provider for all pages (TODO)
