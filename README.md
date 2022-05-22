@@ -5,6 +5,6 @@
 -  Eslint + Prettier
 -  Styled Components
 -  Framer Motion (TODO)
--  Prisma (TODO)
+-  Prisma
 -  React Testing Library + Jest + Cypress (TODO)
 -  Context provider for all pages (TODO)
