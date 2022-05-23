@@ -5,24 +5,27 @@
 import { useState, PropsWithChildren, useCallback } from "react";
 import { createContext, useContextSelector } from "use-context-selector";
 
+// Create type for Value
+type Value = number | undefined;
+
+// Create type for the context
+// allow null
+type GlobalContextType = {
+   value: Value;
+   setValue: (val: Value) => void;
+} | null;
+
 const useGlobalContext = () => {
-   const [value, setValue] = useState(undefined);
+   const [value, setValue] = useState<Value>(undefined);
    // Use Callback is needed to prevent it from creating
    // new function (so new reference) every time.
    // The empty dependency array means that the function is
    // only created once.
    return {
       value,
-      setValue: useCallback((val: any) => setValue(val), []),
+      setValue: useCallback((val: Value) => setValue(val), []),
    };
 };
-
-// Create type for the context
-// allow null
-type GlobalContextType = {
-   value: any;
-   setValue: (val: any) => void;
-} | null;
 
 // Create null context of the created type
 const GlobalContext = createContext<GlobalContextType>(null);
